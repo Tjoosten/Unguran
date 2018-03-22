@@ -11,5 +11,12 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix // Instance for the laravel asset runner
+    
+    // Authencation page resources
+    .js('resources/assets/js/auth.js', 'public/js')
+    .sass('resources/assets/sass/auth.scss', 'public/css')
+
+    // Application resources
+    .js('resources/assets/js/app.js', 'public/js')
+    .sass('resources/assets/sass/app.scss', 'public/css');
